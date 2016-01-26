@@ -1,0 +1,28 @@
+print("Hello")
+
+import random
+
+def main():
+
+    data = '3' #a string
+    num = int(data) #convert to a number
+
+
+
+    while True:
+        resp=input("Please, insert a number")
+
+        if resp == 'x':
+            break
+        numero = int(resp)
+        if is_even(numero):
+            print('is even')
+
+        else:
+            print('is odd')
+            
+def is_even(x):
+    even = bool(x%2 == 0)
+    return even
+
+main()
